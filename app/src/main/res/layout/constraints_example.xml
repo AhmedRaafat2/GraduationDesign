@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moove">
+
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textForImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/pick"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainImage" />
+
+    <Button
+        android:id="@+id/mainButn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/acer_btn"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:text="@string/createAcer"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/orSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/signInOptionsAcer"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainButn" />
+
+    <ImageView
+        android:id="@+id/facebookIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toStartOf="@id/gPlusIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orSign" />
+
+    <ImageView
+        android:id="@+id/gPlusIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toStartOf="@id/acerIcon"
+        app:layout_constraintStart_toEndOf="@id/facebookIcon"
+        app:layout_constraintTop_toBottomOf="@id/orSign"
+        app:layout_constraintTop_toTopOf="@id/facebookIcon" />
+
+    <ImageView
+        android:id="@+id/acerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gPlusIcon"
+        app:layout_constraintTop_toBottomOf="@id/orSign"
+        app:layout_constraintTop_toTopOf="@id/gPlusIcon" />
+
+    <TextView
+        android:id="@+id/terms1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/termsAcer1"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@id/terms2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facebookIcon"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/terms2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/termsAcer2"
+        android:textColor="@color/lightBlue"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@id/terms1"
+        app:layout_constraintTop_toBottomOf="@id/facebookIcon"
+        app:layout_constraintTop_toTopOf="@id/terms1" />
+
+    <TextView
+        android:id="@+id/terms3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/termsAcer3"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@id/terms2"
+        app:layout_constraintTop_toTopOf="@id/terms2" />
+
+    <TextView
+        android:id="@+id/terms4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="@string/termsAcer4"
+        android:textColor="@color/lightBlue"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@id/terms3"
+        app:layout_constraintTop_toTopOf="@id/terms3" />
+
+
+</android.support.constraint.ConstraintLayout>
